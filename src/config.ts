@@ -40,16 +40,7 @@ export const siteConfig: SiteConfig = {
 };
 
 export const navBarConfig: NavBarConfig = {
-	links: [
-		LinkPreset.Home,
-		LinkPreset.Archive,
-		LinkPreset.About,
-		{
-			name: "GitHub",
-			url: "https://github.com/saicaca/fuwari", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
-		},
-	],
+	links: [LinkPreset.Home, LinkPreset.Archive, LinkPreset.About],
 };
 
 export const profileConfig: ProfileConfig = {
@@ -60,14 +51,12 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Twitter",
 			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
 			url: "https://x.com/toolman_ai",
 		},
 		{
-			name: "youtube",
+			name: "YouTube",
 			icon: "fa6-brands:youtube",
-			url: "https://store.steampowered.com",
+			url: "https://www.youtube.com/@toolman-ai",
 		},
 		{
 			name: "Telegram",
@@ -82,8 +71,9 @@ export const profileConfig: ProfileConfig = {
 	],
 };
 
+// 👇 这里改成了 false，底部的 CC 版权框就会消失
 export const licenseConfig: LicenseConfig = {
-	enable: true,
+	enable: false,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
 };
