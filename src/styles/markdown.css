@@ -19,9 +19,9 @@
         }
     }
 
+    /* ✅ 这里是你刚才修复的链接样式，现在是完美的 */
     a:not(.no-styling) {
-        @apply text-blue-500 hover:underline;
-        underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
+        @apply text-blue-500 hover:underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
         display: inline-block;
@@ -74,13 +74,15 @@
         @apply opacity-100 fill-white dark:fill-white/75;
     }
     .copy-btn.success .copy-icon {
-        @apply opacity-0 fill-[var(--deep-text)]
+        /* 🟢 已补全分号 */
+        @apply opacity-0 fill-[var(--deep-text)];
     }
     .copy-btn .success-icon {
         @apply opacity-0 fill-white;
     }
     .copy-btn.success .success-icon {
-        @apply opacity-100
+        /* 🟢 已补全分号 */
+        @apply opacity-100;
     }
 
     .expressive-code {
@@ -118,4 +120,3 @@
         margin: 1em 0;
     }
     
-}
