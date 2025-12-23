@@ -1,8 +1,8 @@
 ---
 title: 最新超详细Claude国内使用攻略（含订阅+白嫖方法）
 published: 2025-12-17
-description: 今天带来一份目前全面的Claude Pro国内充值订阅和使用教程，涵盖多种方式，还有白嫖Claude-sonnet-4.5的方法。
-image: ""
+description: Claude Pro国内充值订阅和使用教程，手把手教你如何注册Claude账号，以及使用Cursor、OpenRouter和Poe等第三方平台访问Claude模型的详细对比。附国内支付及API调用指南。
+image: "../../assets/images/claude-jiaocheng/claude-jiaocheng-cover.png"
 tags: [Claude,Claude Pro,教程]
 category: 海外AI使用教程
 draft: false
@@ -22,6 +22,7 @@ draft: false
 
 下面，让我们直接进入正题！
 
+---
 
 
 # 一、Claude如何注册使用
@@ -30,7 +31,7 @@ draft: false
 
 要想不被“露头秒”，需要先准备：
 
-* 干净的魔法工具（可以通过https://ping0.cc/查一下，风控值越低越好）
+* 干净的魔法工具（可以通过[https://ping0.cc/](https://ping0.cc/)查一下，风控值越低越好）
 
 * 海外邮箱：Gmail或者proton mail
 
@@ -46,9 +47,8 @@ draft: false
 
 
 
-打开Claude网站 `https://claude.ai/`，输入你的邮箱后继续。
-
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=MTM1ZGU4MDNkMzJlMjI4ZGNkOTY3Mjg2ZWI4MDZjMTFfUFM2b0E3RUxPdWxjRFZQMW13UGpTQThla29ldndTZUhfVG9rZW46VFZ5RWJWamN2bzVGTkV4UmJ2aGNxN0JsbkxkXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+打开Claude网站 [https://claude.ai/](https://claude.ai/)，输入你的邮箱后继续。
+![这是图片描述](../../assets/images/claude-jiaocheng/01.png)
 
 
 
@@ -56,7 +56,7 @@ draft: false
 
 登录邮箱，找到Claude发送的验证邮件，点击其中的链接完成验证。
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=YzZlNTBmNGIxYWE0MjZlNTQ0ZmRkMjE3NmE3ZWYwMWZfcG5MdnByQVdyNlpsb2hLek96M3pzOHBqMUtPQW9URWdfVG9rZW46WjFDSWJaWjV4bzBSN0R4VzF3U2NqWWpDbkJiXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/02.png)
 
 
 
@@ -64,7 +64,7 @@ draft: false
 
 系统会要求输入手机号码进行验证。这里建议使用老美或英子的电话号码。
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=NWIwOWFjMDQ4MTE5MWIxNDBmNTYzYmVmY2NjNGE0YzdfVUlFWkZsaUpNenZHYTBIQjRWUTJSeTZVQ1VZTFhTczlfVG9rZW46QW9rcmJvZmp1b2ZEdEZ4SExYS2NKZ09abnFiXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/03.png)
 
 
 
@@ -74,7 +74,7 @@ draft: false
 
 在平台获取号码并完成验证后，你的Claude账号就注册成功了！
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=ZmIzMzlmZWU4M2YxM2FmMWUzZTBhYzlkZDM3YjQ1MjdfVm9WWFZZRDBRcEhFbGVmdnhXTXU4Y2xiR0R4dUZDWmpfVG9rZW46UVZZUmJ5WU5Xb1FKR2N4c1VqM2NDNnlZbnFoXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/04.png)
 
 ### 4. Claude Pro升级订阅
 
@@ -86,12 +86,12 @@ draft: false
 
 具体操作可以看看这篇文章，大同小异：
 
-1
+[最新ChatGPT Plus国内升级订阅和使用方法盘点，超全！](https://toolmanai.com/posts/chatgpt-plus-shengji-jiaocheng/)
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=OTc1ZWZkMThkNjcyYzFmYTNhNzkyMGQxMTcwZGU3MmVfaHdsTnFrTUYzREVwVzUyOHhRQk5IUk1LYmcxb21Eem5fVG9rZW46U3p5MWJsVVQwb0Y5bHB4bDh0cWNFRUE0blNjXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/05.png)
 
 
-
+---
 
 
 # 二、 国内直连镜像
@@ -114,13 +114,12 @@ draft: false
 
 
 
-2233算是一个比较稳定的选择，它甚至提供按天使用的套餐，适合尝鲜。
+[2233](https://2233.ai/i/AGENT)算是一个比较稳定的选择，它甚至提供按天使用的套餐，适合尝鲜。
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=YWU1MjlkNTkzMDgzMzdhNTNkNzM4NjM0MTdjMGY0ZDVfTG9qZE1FN21ydWd0UVBWam5KajRKS0dRNkV5dzVJbXdfVG9rZW46QVI4M2IzUWZKb2twVFR4UDNiY2NNV0t1bmNlXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
-
-
+![这是图片描述](../../assets/images/claude-jiaocheng/06.png)
 
 
+---
 
 # 三、 其他第三方平台
 
@@ -146,9 +145,9 @@ Cursor是一个专为开发者设计的AI编程工具，集成了Claude，是写
 
 **操作如下：**
 
-* 打开https://cursor.com/cn，在顶部选择“资源”>“文档”。
+* 打开[https://cursor.com/cn](https://cursor.com/cn)，在顶部选择“资源”>“文档”。
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=YmU2MGRjMjZmNWE4OGFhZmU1ZTkwZWQwODkwYjU5MDVfc0Q4WUlWa0NaWnU2N0JhdnlMVGN6NjB0RzJLcjd1bURfVG9rZW46SjhYVmJPbUxTb255MER4Y1hscGNSZ1dGbnJoXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/07.png)
 
 * 在跳转页面点击右侧的展开按钮。
 
@@ -158,19 +157,19 @@ Cursor是一个专为开发者设计的AI编程工具，集成了Claude，是写
 
 不过测试了一下，对比官网原版体验上是有差距的，大家按需使用吧。
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=ZDZmNzZlZDJhNmI5ODcxY2I3ZmRjNmYxYzUxZDhhZmRfM2N1ZkEzMlhnSDhOMGJBbUZjbUxlSTZIR3lFaWRRTnZfVG9rZW46WWZxNWJEb3M3b3I2VmR4Y25XNWNqUWFVbnVkXzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/08.png)
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=NGRmODgyZjg4YTg5MzdiNTVlOTFiODE3YWRkN2FkMTVfRUlEOFBIT3lZd204UWozcXR6VUdXYk5YbVlPeTZUN0hfVG9rZW46VzBqdGJRVkowb3RFMHZ4WHhCMGM3Q2ZYbkM3XzE3NjU5NTc5NDU6MTc2NTk2MTU0NV9WNA)
+![这是图片描述](../../assets/images/claude-jiaocheng/09.png)
 
 
 
-* **OpenRouter&#x20;**
+2. **OpenRouter&#x20;**
 
 最大的模型API集合站之一，可以在其聊天窗口免费体验Claude全系列模型，也提供API调用（重点是支持银联）。
 
 
 
-* **Poe**
+3. **Poe**
 
 全球知名的模型集合站，汇集了包括Claude、GPT、Gemini在内的顶尖模型。
 

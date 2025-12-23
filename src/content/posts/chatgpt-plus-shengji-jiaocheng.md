@@ -2,7 +2,7 @@
 title: 最新ChatGPT Plus国内升级订阅和使用方法盘点，超全！
 published: 2025-12-14
 description: 今天带来一份目前全面的ChatGPT Plus充值订阅和使用教程，涵盖多种方式，让你可以体验上ChatGPT Plus。
-image: ""
+image: "../../assets/images/chatgptplus-jiaocheng/chatgptplus-jiaocheng-cover.png"
 tags: [chatgpt,chatgpt plus,gpt,教程]
 category: 海外AI使用教程
 draft: false
@@ -14,7 +14,7 @@ draft: false
 
 下面，让我们直接进入正题！
 
-
+---
 
 # 方法一：第三方充值
 
@@ -38,11 +38,11 @@ draft: false
 
 优势在于提供售后支持，但价格上每月约有8美刀的溢价。
 
-```plain&#x20;text
-传送门：https://nf.video/37h7sn
-```
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=MDg5NmVkMzRmMmI5NzJiYjQ0MTc2YTJmZDZkYTIwMmVfMFI2bEtCOWk1T0FwaDhnd09CMklUT3dCNnRxQkRUTjZfVG9rZW46Ulp6UWJtWlp4b2t3WmZ4ZWFqd2NCRFkyblVkXzE3NjU2ODQ5MjA6MTc2NTY4ODUyMF9WNA)
+传送门：[https://nf.video/37h7sn](https://nf.video/37h7sn)
+
+
+![这是图片描述](../../assets/images/chatgptplus-jiaocheng/01.png)
 
 
 
@@ -50,11 +50,11 @@ draft: false
 
 同样是运营时间较长的备案平台，服务范围还涵盖了ChatGPT Plus、Netflix、POE等。但价格溢价较高，每月约贵14美刀，并且不提供售后服务。
 
-```plain&#x20;text
-传送门：https://universalbus.cn/?s=lTVZgwUD46
-```
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=Y2U4OGE0NzQwMjhiOWQ1MGJhMDg1ODU5ZmUwMTFiNmNfamFSNkxtd1hsMmFDQXNtenVCTXRleGVMUXh6NjdZcllfVG9rZW46RFgwY2JkUTY2b0xmVlZ4TjVZY2NvYW5CbnRMXzE3NjU2ODQ5MjA6MTc2NTY4ODUyMF9WNA)
+传送门：[https://universalbus.cn/?s=lTVZgwUD46](https://universalbus.cn/?s=lTVZgwUD46)
+
+
+![这是图片描述](../../assets/images/chatgptplus-jiaocheng/02.png)
 
 
 
@@ -66,14 +66,14 @@ draft: false
 
 不过，他这个是要求两个月起充。
 
-```plain&#x20;text
-传送门：https://bewild.ai?code=AGENT
-```
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=MjJhM2M2NWNlMGQ4OGNlYTUxMWRjMWZjM2I2OWYwOGRfRTFqeEszQlZ5UXBiNjYyS0w0N0hCRkFEOVE0MkJvVHVfVG9rZW46QkFONmI5T0RrbzcxQzZ4bFpIamNHZXQwbjJkXzE3NjU2ODQ5MjA6MTc2NTY4ODUyMF9WNA)
+传送门：[https://bewild.ai?code=AGENT](https://bewild.ai?code=AGENT)
 
 
+![这是图片描述](../../assets/images/chatgptplus-jiaocheng/03.png)
 
+
+---
 
 
 # 方法二：苹果礼品卡或Google Pay
@@ -88,9 +88,9 @@ draft: false
 
 1. **访问苹果官网**：进入礼品卡购买页面，选择通过左侧的“email”发送。
 
-```plain&#x20;text
-传送门：https://www.apple.com/shop/buy-giftcard/giftcard
-```
+
+传送门：[https://www.apple.com/shop/buy-giftcard/giftcard](https://www.apple.com/shop/buy-giftcard/giftcard)
+
 
 
 
@@ -110,7 +110,7 @@ draft: false
 
 1
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=NDNmZWE0MTA2OTQwYzA3YTQ0M2E5MGJiZmM1MGYyMWVfWFNadEdxM21qSnJ3VFg4RnA5V2pEQ0dmWGNMVktOaVhfVG9rZW46UmdkemJybjZ5b2pvN3B4Q1AwbGNReXU0bnVoXzE3NjU2ODQ5MjA6MTc2NTY4ODUyMF9WNA)
+![这是图片描述](../../assets/images/chatgptplus-jiaocheng/04.png)
 
 
 
@@ -132,15 +132,15 @@ draft: false
 
 1. **访问谷歌钱包**：打开Google Wallet页面，选择“添加支付方式”。
 
-```plain&#x20;text
-传送门：https://wallet.google.com/
-```
+
+传送门：[https://wallet.google.com/](https://wallet.google.com/)
+
 
 
 
 * **绑定卡片**：选择添加信用卡或借记卡，然后将你的卡号信息填写进去。
 
-![](https://ai.feishu.cn/space/api/box/stream/download/asynccode/?code=MGY2ZjEwMDNmNmU5ODgyZTIxM2Y3ZTI2NjAyMzk0ZTVfMEdUUnZzM29yeFhsWTBON1pnNnFSS0Vkb2JOdURuU0lfVG9rZW46UjN0aGJHYVdBb215NXl4QWFOWWNrWm5tbnZnXzE3NjU2ODQ5MjA6MTc2NTY4ODUyMF9WNA)
+![这是图片描述](../../assets/images/chatgptplus-jiaocheng/05.png)
 
 
 
@@ -154,7 +154,7 @@ draft: false
 
 1
 
-
+---
 
 # 方法三：国内直连使用
 
@@ -182,13 +182,15 @@ draft: false
 
 上文提到的银河录像局等平台也提供此类服务。
 
-```plain&#x20;text
-银河录像局：https://nf.video/37h7sn
-环球巴士：https://universalbus.cn/?s=lTVZgwUD46
-Wild AI：https://bewild.ai?code=AGENT
-```
+
+银河录像局：[https://nf.video/37h7sn](https://nf.video/37h7sn)
+
+环球巴士：[https://universalbus.cn/?s=lTVZgwUD46](https://universalbus.cn/?s=lTVZgwUD46)
+
+Wild AI：[https://bewild.ai?code=AGENT](https://bewild.ai?code=AGENT)
 
 
+---
 
 **总结一下**
 
