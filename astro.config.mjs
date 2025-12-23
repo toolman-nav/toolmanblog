@@ -1,8 +1,10 @@
+import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
+import keystatic from "@keystatic/astro";
 import swup from "@swup/astro";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
@@ -103,6 +105,8 @@ export default defineConfig({
 		}),
 		svelte(),
 		sitemap(),
+		react(),
+		keystatic(),
 	],
 	markdown: {
 		remarkPlugins: [
