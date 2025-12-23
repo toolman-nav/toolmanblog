@@ -1,3 +1,4 @@
+import cloudflare from "@astrojs/cloudflare";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 import svelte from "@astrojs/svelte";
@@ -32,6 +33,8 @@ export default defineConfig({
 	site: "https://toolmanai.com/",
 	base: "/",
 	trailingSlash: "always",
+	output: "hybrid",
+
 	integrations: [
 		tailwind({
 			nesting: true,
@@ -108,6 +111,7 @@ export default defineConfig({
 		react(),
 		keystatic(),
 	],
+
 	markdown: {
 		remarkPlugins: [
 			remarkMath,
@@ -166,6 +170,7 @@ export default defineConfig({
 			],
 		],
 	},
+
 	vite: {
 		build: {
 			rollupOptions: {
@@ -182,4 +187,6 @@ export default defineConfig({
 			},
 		},
 	},
+
+	adapter: cloudflare(),
 });
