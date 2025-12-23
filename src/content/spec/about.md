@@ -11,4 +11,6 @@ title: 关于本站
 ### 我的目标
 让每个人都能轻松掌握 ChatGPT、Claude 等 AI 工具，提升工作效率。
 
+==高亮文本==
+
 > "Stay hungry, stay foolish."

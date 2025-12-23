@@ -1,0 +1,46 @@
+---
+import { siteConfig, profileConfig } from '@/config';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date | string; // 兼容字符串和日期对象
+  updatedDate?: Date | string;
+  heroImage?: string;
+}
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+
+// 🛠️ 辅助函数：强制转换为 ISO 8601 格式 (带时区)
+function toISODateString(dateInput: Date | string | undefined) {
+  if (!dateInput) return new Date().toISOString();
+  const date = new Date(dateInput);
+  return date.toISOString(); // 输出例如：2023-10-01T00:00:00.000Z
+}
+
+// 🖼️ 图片逻辑：如果有文章图用文章图，没有则用网站默认头像/Logo
+const schemaImage = heroImage 
+  ? new URL(heroImage, Astro.site).toString() 
+  : new URL(profileConfig.avatar || "/favicon.png", Astro.site).toString();
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": title,
+  "description": description,
+  "image": schemaImage, // 👈 修复了 missing image
+  "datePublished": toISODateString(pubDate), // 👈 修复了日期格式
+  "dateModified": toISODateString(updatedDate || pubDate),
+  "author": {
+    "@type": "Person",
+    "name": profileConfig.name,
+    "url": Astro.site
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": Astro.url
+  }
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

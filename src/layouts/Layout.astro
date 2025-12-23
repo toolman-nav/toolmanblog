@@ -2,6 +2,7 @@
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import JsonLD from '../components/JsonLD.astro';
 
 import ConfigCarrier from "@components/ConfigCarrier.astro";
 import { profileConfig, siteConfig } from "@/config";
@@ -91,7 +92,12 @@ const bannerOffset =
           gtag('js', new Date());
           gtag('config', 'G-G4K8676ZVL');
         </script>
-
+<JsonLD 
+        title={title} 
+        description={description} 
+        pubDate={published} 
+        heroImage={image} 
+    />
         <meta name="description" content={description || siteConfig.subtitle || siteConfig.title}>
         <meta name="author" content={profileConfig.name}>
 
