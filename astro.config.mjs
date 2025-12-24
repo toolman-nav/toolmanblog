@@ -190,12 +190,12 @@ export default defineConfig({
 
 	adapter: cloudflare({
 		routes: {
-			strategy: "include", // 🚨 关键：启用“白名单模式”，彻底解决冲突
+			strategy: "include", // 🚨 核心开关：启用白名单模式
 			include: [
-				"/api/*", // 后台 API
-				"/keystatic/*", // 后台页面
-				"/rss.xml", // RSS 订阅 (因为没加 prerender，所以也是动态的)
-				"/robots.txt", // 爬虫规则
+				"/api/*", // ✅ 拯救后台登录
+				"/keystatic/*", // ✅ 拯救后台页面
+				"/rss.xml", // ✅ 动态生成的 RSS
+				"/robots.txt", // ✅ 动态生成的爬虫规则
 			],
 		},
 	}),
