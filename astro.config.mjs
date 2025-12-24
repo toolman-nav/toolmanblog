@@ -188,5 +188,12 @@ export default defineConfig({
 		},
 	},
 
-	adapter: cloudflare(),
+	adapter: cloudflare({
+		routes: {
+			extend: {
+				// 强制这两个路径走 Cloudflare Worker (服务器)，不要走静态回退
+				include: ["/api/*", "/keystatic/*"],
+			},
+		},
+	}),
 });
