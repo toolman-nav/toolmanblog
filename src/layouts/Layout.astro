@@ -81,6 +81,8 @@ const bannerOffset =
 	<head>
 
         <title>{pageTitle}</title>
+		<meta property="og:image" content={new URL('/default-og.jpg', Astro.site)} />
+		<meta property="twitter:image" content={new URL('/default-og.jpg', Astro.site)} />
 
         <meta charset="UTF-8" />
         
