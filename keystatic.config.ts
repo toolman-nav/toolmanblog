@@ -1,9 +1,12 @@
 import { collection, config, fields } from "@keystatic/core";
 
 export default config({
-	storage: {
-		kind: "local", // 本地模式，实际上线后可以改成 github 模式实现云端写作
-	},
+	storage: import.meta.env.DEV
+		? { kind: "local" }
+		: {
+				kind: "github",
+				repo: "toolman-nav/toolmanblog", // 🚨 例如: 'toolman/my_blog' (去GitHub看你的仓库地址)
+			},
 	collections: {
 		posts: collection({
 			label: "文章",
