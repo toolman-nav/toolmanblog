@@ -1,23 +1,23 @@
-export const prerender = false; // 🚨 强制动态模式，确保它是走服务器的
+// export const prerender = false; // 👈 这一行删掉，在 Server 模式下默认就是动态的
 
-export async function GET() {
-	// 获取环境变量
-	// 在 Astro + Cloudflare 中，变量通常在 import.meta.env
+import type { APIRoute } from "astro";
+
+export const GET: APIRoute = async ({ request }) => {
 	const clientId = import.meta.env.KEYSTATIC_GITHUB_CLIENT_ID;
-	const clientSecret = import.meta.env.KEYSTATIC_GITHUB_CLIENT_SECRET;
-	const secret = import.meta.env.KEYSTATIC_SECRET;
+	// 为了安全，不显示 Secret
+	const hasClientSecret = !!import.meta.env.KEYSTATIC_GITHUB_CLIENT_SECRET;
+	const hasSecret = !!import.meta.env.KEYSTATIC_SECRET;
 
 	return new Response(
 		JSON.stringify({
-			status: "Success! Routing is working.",
+			status: "Success!",
+			url: request.url, // 看看实际请求的 URL 是啥
 			checks: {
-				"Client ID": clientId
-					? `✅ Exists (Starts with ${clientId.substring(0, 4)}...)`
-					: "❌ MISSING",
-				"Client Secret": clientSecret ? "✅ Exists (Hidden)" : "❌ MISSING",
-				"Keystatic Secret": secret ? "✅ Exists (Hidden)" : "❌ MISSING",
+				"Client ID": clientId ? "✅ Configured" : "❌ MISSING",
+				"Client Secret": hasClientSecret ? "✅ Configured" : "❌ MISSING",
+				"Keystatic Secret": hasSecret ? "✅ Configured" : "❌ MISSING",
 			},
-			message: "If you see this JSON, Cloudflare Routing is PERFECT.",
+			message: "Routing is working properly.",
 		}),
 		{
 			status: 200,
@@ -26,4 +26,4 @@ export async function GET() {
 			},
 		},
 	);
-}
+};
