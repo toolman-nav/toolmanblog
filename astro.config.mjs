@@ -190,10 +190,13 @@ export default defineConfig({
 
 	adapter: cloudflare({
 		routes: {
-			extend: {
-				// 强制这两个路径走 Cloudflare Worker (服务器)，不要走静态回退
-				include: ["/api/*", "/keystatic/*"],
-			},
+			strategy: "include", // 🚨 关键：启用“白名单模式”，彻底解决冲突
+			include: [
+				"/api/*", // 后台 API
+				"/keystatic/*", // 后台页面
+				"/rss.xml", // RSS 订阅 (因为没加 prerender，所以也是动态的)
+				"/robots.txt", // 爬虫规则
+			],
 		},
 	}),
 });
