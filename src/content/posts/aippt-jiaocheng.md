@@ -37,9 +37,9 @@ lang: ''
 
 主要是界面更简洁，图标指引啥的也更清晰。
 
-![](../../assets/images/aippt-jiaocheng/01.png)
+![](../../assets/images/aippt-jiaocheng/01.PNG)
 
-![](../../assets/images/aippt-jiaocheng/02.png)
+![](../../assets/images/aippt-jiaocheng/02.PNG)
 
 
 
@@ -53,7 +53,7 @@ lang: ''
 
 进入主界面后，找到 **AI PPT&#x20;**&#x5E76;点击。
 
-![](../../assets/images/aippt-jiaocheng/03.png)
+![](../../assets/images/aippt-jiaocheng/03.PNG)
 
 直接输入你的需求，比如
 
@@ -67,7 +67,7 @@ lang: ''
 
 从构建内容到后台写代码，一步步实时生成整个PPT，科技感拉满！
 
-![](../../assets/images/aippt-jiaocheng/04.png)
+![](../../assets/images/aippt-jiaocheng/04.PNG)
 
 
 
