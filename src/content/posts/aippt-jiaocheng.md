@@ -39,7 +39,7 @@ lang: ''
 
 ![](../../assets/images/aippt-jiaocheng/01.png)
 
-# ![](../../assets/images/aippt-jiaocheng/02.png)
+![](../../assets/images/aippt-jiaocheng/02.png)
 
 
 
@@ -53,7 +53,7 @@ lang: ''
 
 进入主界面后，找到 **AI PPT&#x20;**&#x5E76;点击。
 
-# ![](../../assets/images/aippt-jiaocheng/03.png)
+![](../../assets/images/aippt-jiaocheng/03.png)
 
 直接输入你的需求，比如
 
