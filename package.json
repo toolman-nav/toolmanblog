@@ -9,6 +9,7 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
+		"new": "node scripts/new-post.js",
 		"type-check": "tsc --noEmit --isolatedDeclarations",
 		"new-post": "node scripts/new-post.js",
 		"format": "biome format --write ./src",
