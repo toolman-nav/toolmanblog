@@ -37,7 +37,7 @@ lang: ''
 
 主要是界面更简洁，图标指引啥的也更清晰。
 
-![](../../assets/images/aippt-jiaocheng/01.png)
+![这是图片描述](../../assets/images/aippt-jiaocheng/01.png)
 
 ![](../../assets/images/aippt-jiaocheng/02.png)
 
