@@ -1,15 +1,30 @@
-name: Scheduled Build
+name: Scheduled Build and IndexNow
 
 on:
   schedule:
-    # 这里的 cron 表达式代表每天北京时间上午 9:00 运行一次 (UTC 1:00)
+    # 每天北京时间上午 9:00 运行 (UTC 1:00) 
+    # 建议比 8:00 晚一点，确保日期变更在所有服务器都已生效
     - cron: '0 1 * * *'
-  workflow_dispatch: # 允许你手动点击按钮触发
+  workflow_dispatch: 
 
 jobs:
-  build:
+  build_and_index:
     runs-on: ubuntu-latest
     steps:
+      # 第一步：通知 Cloudflare 重新部署
       - name: Trigger Cloudflare Pages Deploy
         run: |
           curl -X POST "${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}"
+      
+      # 第二步：非常重要！等待 Cloudflare 完成构建（约 5 分钟）
+      # 如果不等待，Bing 爬虫过来时，你的新文章可能还没上线，会导致提交失败
+      - name: Wait for Cloudflare Deployment
+        run: sleep 300
+
+      # 第三步：提交最新 URL 给 Bing
+      - name: IndexNow Action
+        uses: fast-reflexes/indexnow-action@v1
+        with:
+          hostname: 'toolmanai.com'
+          sitemap-location: 'https://toolmanai.com/sitemap-index.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
