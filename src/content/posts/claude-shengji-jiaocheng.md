@@ -163,7 +163,7 @@ Cursor是一个专为开发者设计的AI编程工具，集成了Claude，是写
 
 
 
-2. **OpenRouter&#x20;**
+2. **OpenRouter**
 
 最大的模型API集合站之一，可以在其聊天窗口免费体验Claude全系列模型，也提供API调用（重点是支持银联）。
 

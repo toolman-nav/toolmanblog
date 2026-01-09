@@ -31,7 +31,7 @@ lang: ''
 
 
 
-Poe，全称为“Platform of AI”，翻译过来就&#x662F;**“AI工具集合平台”**。
+Poe，全称为“Platform of AI”，翻译过来就**“AI工具集合平台”**。
 
 
 

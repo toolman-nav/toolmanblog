@@ -63,7 +63,7 @@ lang: ''
 `https://notebooklm.google.com`
 
 
-登录后，点&#x51FB;**“新建笔记”。**
+登录后，点**“新建笔记”。**
 
 ![](../../assets/images/notebooklm-jiaocheng/02.png)
 
@@ -147,7 +147,7 @@ lang: ''
 
 
 
-没关系，点&#x51FB;**“音频概览”** 。
+没关系，点**“音频概览”** 。
 
 
 
