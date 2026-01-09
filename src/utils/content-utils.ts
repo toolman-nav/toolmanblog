@@ -7,8 +7,22 @@ import { getCategoryUrl } from "@utils/url-utils.ts";
 const postFilter = ({ data }) => {
 	const now = new Date();
 	const isDraft = data.draft === true;
-	const isFuture = new Date(data.published) > now;
-	return import.meta.env.PROD ? !isDraft && !isFuture : true;
+
+	// 1. 如果没写日期，线上直接隐藏，防止报错
+	if (!data.published) return false;
+
+	const publishDate = new Date(data.published);
+	const isFuture = publishDate > now;
+
+	// 2. 核心逻辑：
+	if (isDraft) return false; // 草稿永远不发
+
+	// 如果是生产环境，未来的文章绝对不发
+	if (import.meta.env.PROD && isFuture) {
+		return false;
+	}
+
+	return true;
 };
 
 async function getRawSortedPosts() {
