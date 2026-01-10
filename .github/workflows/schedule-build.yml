@@ -23,7 +23,7 @@ jobs:
 
       # 第三步：提交最新 URL 给 Bing
       - name: IndexNow Action
-        uses: bojan88/indexnow-action@v2
+        uses: npj/indexnow-action@v2
         with:
           hostname: 'toolmanai.com'
           sitemap-location: 'https://toolmanai.com/sitemap-index.xml'
