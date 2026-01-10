@@ -21,10 +21,18 @@ jobs:
       - name: Wait for Cloudflare Deployment
         run: sleep 300
 
-      # 第三步：提交最新 URL 给 Bing
-      - name: IndexNow Action
-        uses: indexnow-action/indexnow-action@v2
-        with:
-          hostname: 'toolmanai.com'
-          sitemap-location: 'https://toolmanai.com/sitemap-index.xml'
-          key: ${{ secrets.INDEXNOW_KEY }}
+    # 第三步：直接发送 API 请求给微软 (最稳妥，永不失效)
+      - name: Submit to IndexNow
+        run: |
+          curl -X POST "https://www.bing.com/indexnow" \
+          -H "Content-Type: application/json; charset=utf-8" \
+          -d "{
+            \"host\": \"toolmanai.com\",
+            \"key\": \"${{ secrets.INDEXNOW_KEY }}\",
+            \"keyLocation\": \"https://toolmanai.com/${{ secrets.INDEXNOW_KEY }}.txt\",
+            \"urlList\": [
+              \"https://toolmanai.com/\",
+              \"https://toolmanai.com/archive/\",
+              \"https://toolmanai.com/sitemap-index.xml\"
+            ]
+          }"
