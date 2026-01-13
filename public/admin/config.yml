@@ -1,28 +1,35 @@
+# 后端配置：连接 GitHub 仓库
 backend:
   name: github
-  repo: toolman-nav/toolmanblog # 你的仓库地址
-  branch: main # 你的主分支
-  base_url: https://api.netlify.com # 关键：使用 Netlify 的认证代理
-  site_domain: toolmanai.com
-  base_url: https://toolmanai.com
+  repo: toolman-nav/toolmanblog 
+  branch: main 
+  base_url: https://proxy.staticcms.org
+  auth_endpoint: /api/v1/authorize
 
-media_folder: "src/assets/images" # 图片存放位置
-public_folder: "../../assets/images" # 文章内引用的图片相对路径
+# 媒体库配置：图片上传路径
+# 上传的图片会存放在这里
+media_folder: "src/assets/images"
+# 在 Markdown 文章里引用的相对路径（适配 Fuwari 主题）
+public_folder: "../../assets/images"
 
+# 内容集合配置
 collections:
   - name: "posts"
     label: "博客文章"
-    folder: "src/content/posts"
-    create: true
-    slug: "{{slug}}"
+    folder: "src/content/posts" # 文章存放路径
+    create: true # 允许在后台新建文章
+    slug: "{{slug}}" # 文件名格式
     extension: "md"
     format: "frontmatter"
     fields:
       - {label: "标题", name: "title", widget: "string"}
       - {label: "发布日期", name: "published", widget: "date", format: "YYYY-MM-DD"}
-      - {label: "简介", name: "description", widget: "text"}
+      - {label: "简介/描述", name: "description", widget: "string"}
       - {label: "封面图", name: "image", widget: "image", required: false}
       - {label: "分类", name: "category", widget: "string"}
       - {label: "标签", name: "tags", widget: "list"}
       - {label: "是否草稿", name: "draft", widget: "boolean", default: false}
       - {label: "正文", name: "body", widget: "markdown"}
+
+# 本地模式配置（方便你在电脑上测试，不需要 push 就能看效果）
+local_backend: true

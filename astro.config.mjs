@@ -32,7 +32,7 @@ export default defineConfig({
 	site: "https://toolmanai.com/",
 	base: "/",
 	trailingSlash: "always",
-	output: "server",
+	output: "static",
 
 	integrations: [
 		tailwind({
@@ -108,7 +108,6 @@ export default defineConfig({
 		svelte(),
 		sitemap(),
 		react(),
-		keystatic(),
 	],
 
 	markdown: {
@@ -173,10 +172,4 @@ export default defineConfig({
 	adapter: cloudflare({
 		platformProxy: { enabled: true },
 	}),
-	// 关键：解决 Fuwari 主题在 Cloudflare 上的 node:path 报错
-	vite: {
-		ssr: {
-			external: ["node:path", "node:fs"],
-		},
-	},
 });
