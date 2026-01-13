@@ -32,7 +32,7 @@ export default defineConfig({
 	site: "https://toolmanai.com/",
 	base: "/",
 	trailingSlash: "always",
-	output: "server",
+	output: "hybrid",
 
 	integrations: [
 		tailwind({
