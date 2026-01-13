@@ -32,7 +32,7 @@ export default defineConfig({
 	site: "https://toolmanai.com/",
 	base: "/",
 	trailingSlash: "always",
-	output: "hybrid",
+	output: "server",
 
 	integrations: [
 		tailwind({
@@ -108,6 +108,7 @@ export default defineConfig({
 		svelte(),
 		sitemap(),
 		react(),
+		keystatic(),
 	],
 
 	markdown: {
@@ -169,24 +170,13 @@ export default defineConfig({
 		],
 	},
 
-	vite: {
-		build: {
-			rollupOptions: {
-				onwarn(warning, warn) {
-					// temporarily suppress this warning
-					if (
-						warning.message.includes("is dynamically imported by") &&
-						warning.message.includes("but also statically imported by")
-					) {
-						return;
-					}
-					warn(warning);
-				},
-			},
-		},
-	},
-
 	adapter: cloudflare({
 		platformProxy: { enabled: true },
 	}),
+	// 关键：解决 Fuwari 主题在 Cloudflare 上的 node:path 报错
+	vite: {
+		ssr: {
+			external: ["node:path", "node:fs"],
+		},
+	},
 });
