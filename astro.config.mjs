@@ -189,6 +189,7 @@ export default defineConfig({
 	},
 
 	adapter: cloudflare({
+		platformProxy: { enabled: true },
 		routes: {
 			strategy: "include",
 			include: [
