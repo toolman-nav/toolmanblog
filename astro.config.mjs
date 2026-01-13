@@ -5,7 +5,6 @@ import svelte from "@astrojs/svelte";
 import tailwind from "@astrojs/tailwind";
 import { pluginCollapsibleSections } from "@expressive-code/plugin-collapsible-sections";
 import { pluginLineNumbers } from "@expressive-code/plugin-line-numbers";
-import keystatic from "@keystatic/astro";
 import swup from "@swup/astro";
 import { defineConfig } from "astro/config";
 import expressiveCode from "astro-expressive-code";
@@ -109,7 +108,6 @@ export default defineConfig({
 		svelte(),
 		sitemap(),
 		react(),
-		keystatic(),
 	],
 
 	markdown: {
@@ -190,16 +188,5 @@ export default defineConfig({
 
 	adapter: cloudflare({
 		platformProxy: { enabled: true },
-		routes: {
-			strategy: "include",
-			include: [
-				"/api/*", // 覆盖 /api/debug
-				"/api/*/", // 🚨 覆盖 /api/debug/ (带斜杠)
-				"/keystatic/*",
-				"/keystatic/*/", // 🚨 覆盖 /keystatic/ (带斜杠)
-				"/rss.xml",
-				"/robots.txt",
-			],
-		},
 	}),
 });
