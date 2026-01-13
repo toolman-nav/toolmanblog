@@ -1,12 +1,9 @@
-# 后端配置：连接 GitHub 仓库
+# 后端配置：直接连接 GitHub
 backend:
   name: github
-  repo: toolman-nav/toolmanblog # 你的仓库名
-  branch: main # 你的分支名
-  # 中转站基础地址
-  base_url: https://decap-cms-oauth-gateway.onrender.com
-  # 这里的起点必须是 auth，不是 /callback
-  auth_endpoint: auth
+  repo: toolman-nav/toolmanblog
+  branch: main
+# 注意：换成 Sveltia 后，不再需要 base_url 和 auth_endpoint，它们可以删掉了
 
 # 媒体库配置：图片上传路径
 # 上传的图片会存放在这里
