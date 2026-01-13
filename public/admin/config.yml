@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: toolman-nav/toolmanblog # 你的仓库地址
+  branch: main # 你的主分支
+  base_url: https://api.netlify.com # 关键：使用 Netlify 的认证代理
+  site_domain: toolmanai.com
+  base_url: https://toolmanai.com
+
+media_folder: "src/assets/images" # 图片存放位置
+public_folder: "../../assets/images" # 文章内引用的图片相对路径
+
+collections:
+  - name: "posts"
+    label: "博客文章"
+    folder: "src/content/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "published", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "简介", name: "description", widget: "text"}
+      - {label: "封面图", name: "image", widget: "image", required: false}
+      - {label: "分类", name: "category", widget: "string"}
+      - {label: "标签", name: "tags", widget: "list"}
+      - {label: "是否草稿", name: "draft", widget: "boolean", default: false}
+      - {label: "正文", name: "body", widget: "markdown"}
