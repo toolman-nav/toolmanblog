@@ -3,13 +3,12 @@ backend:
   name: github
   repo: toolman-nav/toolmanblog
   branch: main
-# 注意：换成 Sveltia 后，不再需要 base_url 和 auth_endpoint，它们可以删掉了
 
 # 媒体库配置：图片上传路径
 # 上传的图片会存放在这里
 media_folder: "src/assets/images"
-# 在 Markdown 文章里引用的相对路径（适配 Fuwari 主题）
-public_folder: "../../assets/images"
+# 在 Markdown 文章里引用的绝对路径（必须以 / 开头）
+public_folder: "/src/assets/images"
 
 # 内容集合配置
 collections:
@@ -22,7 +21,7 @@ collections:
     format: "frontmatter"
     fields:
       - {label: "标题", name: "title", widget: "string"}
-      - {label: "发布日期", name: "published", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "发布日期", name: "published", widget: "datetime", format: "YYYY-MM-DD", time_format: false}
       - {label: "简介/描述", name: "description", widget: "string"}
       - {label: "封面图", name: "image", widget: "image", required: false}
       - {label: "分类", name: "category", widget: "string"}
