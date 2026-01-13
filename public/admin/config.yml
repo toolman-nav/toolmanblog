@@ -3,9 +3,10 @@ backend:
   name: github
   repo: toolman-nav/toolmanblog # 你的仓库名
   branch: main # 你的分支名
-  # 我们换一个更稳定的中转地址
+  # 中转站基础地址
   base_url: https://decap-cms-oauth-gateway.onrender.com
-  auth_endpoint: /callback
+  # 这里的起点必须是 auth，不是 /callback
+  auth_endpoint: auth
 
 # 媒体库配置：图片上传路径
 # 上传的图片会存放在这里
