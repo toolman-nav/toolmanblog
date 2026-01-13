@@ -5,7 +5,10 @@ export default config({
 		? { kind: "local" }
 		: {
 				kind: "github",
-				repo: "toolman-nav/toolmanblog", // 🚨 例如: 'toolman/my_blog' (去GitHub看你的仓库地址)
+				repo: {
+					owner: "toolman-nav",
+					name: "toolmanblog",
+				},
 			},
 	collections: {
 		posts: collection({
