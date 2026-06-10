@@ -6,6 +6,7 @@ image: /src/assets/images/0610.jpg
 category: 海外AI使用教程
 tags:
   - Claude Fable 5
+  - Claude
   - Claude Pro
   - 教程
 draft: false
