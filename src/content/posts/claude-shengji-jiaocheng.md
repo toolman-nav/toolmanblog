@@ -114,7 +114,7 @@ draft: false
 
 
 
-[2233](https://2233.ai/i/AGENT)算是一个比较稳定的选择，它甚至提供按天使用的套餐，适合尝鲜。
+[2233](https://2233.ai/i/TOOLMAN)算是一个比较稳定的选择，它甚至提供按天使用的套餐，适合尝鲜。
 
 ![这是图片描述](../../assets/images/claude-jiaocheng/06.png)
 
