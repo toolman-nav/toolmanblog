@@ -2,7 +2,7 @@
 title: Claude Fable 5 来了！强是真强，但苟也是真苟（附国内使用教程）
 published: 2026-06-10
 description: Claude Fable 5是当下你能摸到的最强模型，没有之一，附上国内使用教程，快来看看！
-image: /src/assets/images/0610.jpg
+image: flase
 category: 海外AI使用教程
 tags:
   - Claude Fable 5
@@ -88,7 +88,7 @@ Fable 5 输入每百万 token 10 美元，输出 50 美元，是 Opus 4.8 的两
 
 原野卡团队提供的。优点是价格相对公道，而且支持Claude Max版的订阅。
 
-**传送门：**[**https://bewild.ai?code=WEAI**](https://bewild.ai?code=WEAI)
+**传送门：**[**https://bewild.ai?code=TOOLMAN**](https://bewild.ai?code=TOOLMAN)
 
 ![](https://my.feishu.cn/space/api/box/stream/download/asynccode/?code=NmI0NGRlYjlkMzQ4ZmQyZjU5NjhmMTJiZDcxZDI5ZmNfMmtGM3hCd2lIUHdkYkI4ODBNTWZhcEdjNHFLWEhFTWJfVG9rZW46TWpHR2JDcDAzb0IzQVd4TnNPNmM5TE1UbnFoXzE3ODEwNzYzODA6MTc4MTA3OTk4MF9WNA&add_watermark=true&scene_type=CCM)
 
