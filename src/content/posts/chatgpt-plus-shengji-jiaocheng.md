@@ -67,7 +67,7 @@ draft: false
 不过，他这个是要求两个月起充。
 
 
-传送门：[https://bewild.ai?code=AGENT](https://bewild.ai?code=AGENT)
+传送门：[**https://bewild.ai?code=TOOLMAN**](https://bewild.ai?code=TOOLMAN)
 
 
 ![这是图片描述](../../assets/images/chatgptplus-jiaocheng/03.png)
@@ -187,7 +187,7 @@ draft: false
 
 环球巴士：[https://universalbus.cn/?s=lTVZgwUD46](https://universalbus.cn/?s=lTVZgwUD46)
 
-Wild AI：[https://bewild.ai?code=AGENT](https://bewild.ai?code=AGENT)
+Wild AI：[https://2233.ai/i/TOOLMAN](https://2233.ai/i/TOOLMAN)
 
 
 ---
