@@ -1,7 +1,7 @@
 ---
 title: "Claude Code国内使用指南：从安装到接入国产模型，手把手教学"
 published: 2026-01-11
-description: "这里写一段包含关键词的吸引人的描述（SEO重点）..."
+description: 手把手带你用国产模型丝滑替代，快速拿下这款当前最强 AI 编程神器 —— Claude Code
 image: "../../assets/images/claudecode-jiaocheng/00.png"
 tags: ["AI工具", "教程"]
 category: "AI教程"
