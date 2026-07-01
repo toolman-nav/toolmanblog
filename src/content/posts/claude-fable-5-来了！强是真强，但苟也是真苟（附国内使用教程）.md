@@ -2,7 +2,7 @@
 title: Claude Fable 5 来了！强是真强，但苟也是真苟（附国内使用教程）
 published: 2026-06-10
 description: Claude Fable 5是当下你能摸到的最强模型，没有之一，附上国内使用教程，快来看看！
-image: flase
+image: 
 category: 海外AI使用教程
 tags:
   - Claude Fable 5
